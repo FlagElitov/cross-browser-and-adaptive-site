@@ -1,0 +1,594 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  outline: none !important;
+}
+
+.ham {
+  display: none;
+}
+
+.navbar {
+  display: none;
+}
+body {
+  background-color: #fff;
+}
+// Section header
+.header {
+  margin-bottom: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.menu {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 37px;
+  .menu__logo {
+    a {
+      color: #212121;
+      text-decoration: none;
+      font-size: 34px;
+    }
+  }
+  .menu__title {
+    margin-top: 13px;
+    .menu__item {
+      text-decoration: none;
+      color: #212121;
+      margin-left: 30px;
+      font-size: 20px;
+      &:hover {
+        color: blue;
+        transition: 0.2s;
+        padding-bottom: 2px;
+        border-bottom: 2px blue solid;
+      }
+      &:nth-child(1) {
+        color: #4497f3;
+        &:hover {
+          color: blue;
+          transition: 0.2s;
+          padding-bottom: 2px;
+          border-bottom: 2px blue solid;
+        }
+      }
+    }
+  }
+}
+
+// Section home
+
+.headerSection {
+  background: url(../img/bacground.jpg) no-repeat top center;
+  padding-bottom: 78px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  .header__content__center {
+    margin: 0 auto;
+    text-align: center;
+    color: #0d2244;
+    max-width: 680px;
+    margin-top: 280px;
+    z-index: 1;
+    .header__content__title {
+      h1 {
+        color: #dfdfdf;
+        font-size: 60px;
+      }
+    }
+    .header__content__text {
+      margin-top: 33px;
+      color: #ffffff;
+      font-size: 22px;
+    }
+    .header__content__button {
+      margin-top: 140px;
+      display: flex;
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        padding: 21px 45px;
+
+        font-weight: 500;
+      }
+      .header__content__item {
+        margin-left: 45px;
+        &:nth-child(1) {
+          a {
+            margin-right: 23px;
+            font-weight: bold;
+            border: 3px #ffffff solid;
+          }
+        }
+
+        &:last-child {
+          a {
+            font-weight: bold;
+            background-color: #00897b;
+          }
+        }
+      }
+    }
+    .header__content__downBar {
+      margin-top: 100px;
+      .header__content__downBarButton {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+// Section about
+
+.about__top {
+  padding-top: 120px;
+  margin: 0 auto;
+  text-align: center;
+  .about__title {
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #212121;
+  }
+  .about__item {
+    font-size: 15px;
+    margin: 0 auto;
+    max-width: 635px;
+  }
+}
+
+.about__content {
+  margin-top: 140px;
+  display: flex;
+  justify-content: space-between;
+  .about__card {
+    text-align: center;
+    width: 358px;
+    padding: 20px 60px 100px 60px;
+    &:hover {
+      background: #d6b3b3;
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+    .about__card__img {
+      text-align: center;
+      font-size: 56px;
+    }
+    .about__card__title {
+      margin-top: 30px;
+      color: #1a1a1a;
+      font-size: 20px;
+    }
+    .about__card__text {
+      margin-top: 25px;
+      font-size: 15px;
+    }
+  }
+}
+
+// Section services
+
+.sectionServices {
+  background: #e4fdf9;
+  padding-bottom: 120px;
+  .services__content {
+    margin-top: 110px;
+
+    .content__cards {
+      display: flex;
+      justify-content: space-between;
+      &:last-child {
+        margin-top: 30px;
+      }
+      .services__card {
+        background-color: #fff;
+        height: 433px;
+        padding: 50px 50px;
+        text-align: center;
+        max-width: 370px;
+        &:hover {
+          color: #fff;
+
+          background: #00897b;
+          box-shadow: 2px 2px 5px 2px #d1cfe1;
+          transform: scale(1.05);
+          transition: 0.3s;
+          .services__card__button {
+            button {
+              color: #fff;
+              border: 2px #fff solid;
+            }
+          }
+        }
+        .services__card__img {
+          i {
+            font-size: 80px;
+          }
+        }
+        .services__card__title {
+          margin-top: 30px;
+          font-size: 20px;
+        }
+        .services__card__text {
+          font-size: 15px;
+          margin-top: 25px;
+        }
+        .services__card__button {
+          margin-top: 50px;
+          button {
+            font-size: 20px;
+            outline: none; /* Для синий ободки */
+            border: 2px #000000 solid;
+            background: transparent;
+            font-weight: bolder;
+            cursor: pointer;
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .menu__title {
+    display: none;
+  }
+  .header__content__img {
+    img {
+      margin-top: 20px;
+      position: absolute;
+      width: 0%;
+      height: 50%;
+      right: -50%;
+      width: 550;
+    }
+  }
+
+  .container {
+    max-width: 765px;
+  }
+  .ham {
+    display: block;
+    position: absolute;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 28px;
+    right: 40px;
+    width: 56px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+  }
+
+  /* change ham image to close */
+  .showClose {
+    background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+  }
+
+  .navbar {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    background: black;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+  }
+
+  .showNav {
+    /* show the menu */
+    transform: translateY(0);
+  }
+
+  /* basic nav styling below */
+
+  .navbar ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navbar ul li a {
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .navbar ul li a:hover,
+  .navbar ul li a:focus {
+    border-bottom: 2px solid white;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ham {
+    display: block;
+    position: absolute;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 33px;
+    right: 60px;
+    width: 46px;
+    height: 46px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+  }
+
+  .container {
+    max-width: 565px;
+    .header__content {
+      display: flex;
+      justify-content: none;
+
+      .header__content__center {
+        margin: 0 auto;
+        text-align: center;
+        color: #0d2244;
+        max-width: 680px;
+        margin-top: 170px;
+        z-index: 1;
+        .header__content__title {
+          h1 {
+            color: #dfdfdf;
+            font-size: 43px;
+          }
+        }
+        .header__content__text {
+          margin-top: 33px;
+          color: #ffffff;
+          font-size: 22px;
+        }
+        .header__content__button {
+          margin-top: 100px;
+          display: flex;
+          a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            padding: 15px 34px;
+
+            font-weight: 500;
+          }
+          .header__content__item {
+            margin-left: 5px;
+            &:nth-child(1) {
+              a {
+                font-weight: bold;
+                border: 3px #ffffff solid;
+              }
+            }
+
+            &:last-child {
+              a {
+                font-weight: bold;
+                background-color: #00897b;
+              }
+            }
+          }
+        }
+        .header__content__downBar {
+          margin-top: 100px;
+          .header__content__downBarButton {
+            font-size: 29px;
+          }
+        }
+      }
+    }
+    .about__top {
+      padding-top: 120px;
+      margin: 0 auto;
+      text-align: center;
+      .about__title {
+        font-weight: bold;
+        margin-bottom: 40px;
+        font-size: 30px;
+        color: #212121;
+      }
+      .about__item {
+        font-size: 14px;
+        margin: 0 auto;
+        max-width: 635px;
+      }
+    }
+
+    .about__content {
+      margin-top: 40px;
+      justify-content: none;
+      flex-direction: column;
+      .about__card {
+        padding: 27px 40px 70px 40px;
+        margin: 0 auto;
+        text-align: center;
+        &:hover {
+          background: #d6b3b3;
+          transition: 0.2s;
+        }
+        .about__card__img {
+          text-align: center;
+          font-size: 56px;
+        }
+        .about__card__title {
+          margin-top: 30px;
+          color: #1a1a1a;
+          font-size: 20px;
+        }
+        .about__card__text {
+          margin-top: 25px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .sectionServices {
+    background: #e4fdf9;
+    padding-bottom: 90px;
+    .about__top {
+      margin-top: 30px;
+      .about__title {
+        font-size: 26px;
+      }
+      .about__item {
+        font-size: 14px;
+      }
+    }
+    .services__content {
+      margin-top: 80px;
+      .content__cards {
+        margin: 0 auto;
+        display: flex;
+        justify-content: none;
+        flex-direction: column;
+
+        .services__card {
+          margin-top: 30px;
+          &:hover {
+            color: #fff;
+
+            background: #00897b;
+            box-shadow: 2px 2px 5px 2px #d1cfe1;
+            transform: scale(1.05);
+            transition: 0.3s;
+            .services__card__button {
+              button {
+                color: #fff;
+                border: 2px #fff solid;
+              }
+            }
+          }
+          .services__card__img {
+            i {
+              font-size: 80px;
+            }
+          }
+          .services__card__title {
+            margin-top: 30px;
+            font-size: 20px;
+          }
+          .services__card__text {
+            font-size: 15px;
+            margin-top: 25px;
+          }
+          .services__card__button {
+            margin-top: 50px;
+            button {
+              font-size: 20px;
+              outline: none; /* Для синий ободки */
+              border: 2px #000000 solid;
+              background: transparent;
+              font-weight: bolder;
+              cursor: pointer;
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 365px;
+    .menu {
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 37px;
+      .menu__logo {
+        a {
+          color: #212121;
+          text-decoration: none;
+          font-size: 23px;
+        }
+      }
+    }
+    .header__content {
+      .header__content__center {
+        margin-top: 120px;
+        .header__content__title {
+          h1 {
+            color: #dfdfdf;
+            font-size: 33px;
+          }
+        }
+        .header__content__text {
+          margin-top: 33px;
+          color: #ffffff;
+          font-size: 22px;
+        }
+        .header__content__button {
+          margin: 0 auto;
+          margin-top: 80px;
+          display: flex;
+          flex-direction: column;
+          a {
+            text-decoration: none;
+            margin: 0 auto;
+            font-size: 20px;
+            color: #fff;
+            padding: 12px 28px;
+
+            font-weight: 500;
+          }
+          .header__content__item {
+            &:nth-child(1) {
+              a {
+                font-weight: bold;
+                border: 3px #ffffff solid;
+              }
+            }
+
+            &:last-child {
+              padding-top: 40px;
+              a {
+                font-weight: bold;
+                background-color: #00897b;
+              }
+            }
+          }
+        }
+        .header__content__downBar {
+          margin-top: 90px;
+          .header__content__downBarButton {
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+}
